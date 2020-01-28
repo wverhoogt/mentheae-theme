@@ -1,0 +1,24 @@
+.image-menu {
+  .image-hover, .image-active {
+    display: none;
+  }
+  .image-normal {
+    display: block;
+  }
+  &:hover {
+    .image-normal:not(.image-hover) {
+      display: none;
+    }
+    &:not(.active) .image-hover:not(.image-active), &.active .image-hover:not(.image-normal) {
+      display: block;
+    }
+  }
+  &.active {
+    .image-normal:not(.image-active) {
+      display: none;
+    }
+    &:not(:hover) .image-active {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+description = "Standaard head"
+
+[viewBag]
+==
+<head>
+  <meta charset="utf-8">
+  <title>Mentheae - {{ this.page.title }}</title>
+  <meta name="description" content="{{ this.page.meta_description }}">
+  <meta name="title" content="{{ this.page.meta_title }}">
+  <meta name="author" content="Wim Verhoogt">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="OctoberCMS">
+  <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
+  <link href="{{ ['assets/scss/combined.scss']|theme }}" rel="stylesheet">
+  {% styles %}
+  <script src="{{ 'assets/vendor/jquery-3.3.1.min.js'|theme }}"></script
+</head>

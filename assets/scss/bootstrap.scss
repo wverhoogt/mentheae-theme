@@ -1,0 +1,21 @@
+// overrides of a navbar
+//$navbar-default-link-hover-color:   #c0c0c0;
+//$avbar-default-link-hover-bg:       transparent;
+//$navbar-default-link-color:         blue;
+//$navbar-default-bg:                 transparent;
+//$navbar-margin-bottom:              0.3em;
+//$nav-link-padding:                  0px 0px;
+
+// global overrides
+$line-height-base:                    1.3;
+$line-height-lg:                      1.3;
+$carousel-transition-duration:        1.2s;
+
+$bodyColor: #013469;
+$headerColor: #008c46;
+$buttonColor: $headerColor;
+$errorColor: darkred;
+$errorBackgroundColor: #ffafb9;
+$warnColor: saddlebrown;
+$warnBackgroundColor: #fff5bf;
+$theme-colors: ( "std": $buttonColor );
