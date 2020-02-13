@@ -109,9 +109,20 @@ tr.days > td > ul.eventlist > li > a {
         &.outside-interval {
           background-color: lightblue;
         }
-
+        &.today {
+          background-color: greenyellow;
+        }
         &.occupied {
           background-color: lightpink;
+        }
+        &.reserved {
+          background-color: #ff3131;
+        }
+        &.requested {
+          background-color: #a9ff98;
+        }
+        &.reservation {
+          background-color: #fadc61;
         }
       }
     }
@@ -169,10 +180,10 @@ tr.days > td > ul.eventlist > li > a {
   }
 }
 img {
-    &.activity, &.bubbels {
-      width: 100%;
-      max-width: 300px;
-      margin-top: 0.2em;
+  &.activity, &.bubbels {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 0.2em;
   }
   image-orientation: from-image;
 }
