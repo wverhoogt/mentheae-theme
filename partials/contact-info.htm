@@ -2,9 +2,13 @@
 snippetCode = "contactinfo"
 snippetName = "contactinfo"
 ==
-<div class="contact-left">
-    {% content 'contact-links' %}
-</div>
-<div class="contact-right">
-    {% content 'contact-rechts' %}
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 contact-left">
+      {% content 'contact-links' %}
+      {% partial "googlemap" %}
+    </div>
+    <div class="col-md-6 contact-right">
+      {% content 'contact-rechts' %}
+  </div>
 </div>

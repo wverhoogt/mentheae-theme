@@ -1,0 +1,34 @@
+[staticPage]
+useContent = 1
+default = 0
+==
+<?php
+function onInit()
+{
+  Lang::addNamespace('mentheae-theme', $this->theme->getPath() . '/lang');
+}
+?>
+==
+<!DOCTYPE html>
+<html>
+  {% partial "std-page-intro" %}
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            {% page %}
+          </div>
+        </div>
+      {repeater name="content_sections" prompt="Foto toevoegen" tab="Foto´s"}
+        <div class="row">
+          <div class="col-md-5">
+            <img class="foto" src="{mediafinder name="activityimage" label="Afbeelding" mode="image" imageWidth="200" imageHeight="200"{/mediafinder}">
+          </div>
+          <div class="col-md-7">
+            <h3>{text name="titel" label="Titel"}{/text}</h3>
+            {richeditor name="content" label="Bijschrift"}Bijschrift{/richeditor}
+          </div>
+        </div>
+      {/repeater}
+    </div>
+    {% partial "std-page-closer" %}
+</html>

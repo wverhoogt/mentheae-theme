@@ -1,1 +1,6 @@
-static-pages: {  }
+static-pages:
+    over-ons: {  }
+    gastenboek: {  }
+    haarlem-eo: {  }
+    welkom: {  }
+    contact: {  }

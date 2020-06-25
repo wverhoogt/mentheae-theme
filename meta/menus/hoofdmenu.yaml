@@ -1,11 +1,24 @@
 items:
     -
-        title: Home
+        title: Welkom
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: welkom
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Kalender
         nesting: ''
         type: cms-page
         url: ''
         code: ''
-        reference: homepage
+        reference: beschikbaarheid
         cmsPage: ''
         replace: ''
         viewBag:
@@ -13,10 +26,51 @@ items:
             cssClass: ''
             isExternal: '0'
     -
-        title: Beschikbaarheid
-        type: cms-page
+        title: 'Over ons'
+        nesting: '0'
+        type: static-page
+        url: ''
         code: ''
-        reference: beschikbaarheid
+        reference: over-ons
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Gastenboek
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: gastenboek
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Haarlem e.o.'
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: haarlem-eo
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Contact
+        nesting: '0'
+        type: static-page
+        code: ''
+        reference: contact
+        replace: '0'
         viewBag:
             isHidden: '0'
             cssClass: ''

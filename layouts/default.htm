@@ -1,28 +1,19 @@
 description = "Default layout"
+
+[staticPage]
+useContent = 1
+default = 0
+==
+<?php
+function onInit()
+{
+  Lang::addNamespace('mentheae-theme', $this->theme->getPath() . '/lang');
+}
+?>
 ==
 <!DOCTYPE html>
 <html>
-  {% partial "head" %}
-  <body class="{{ this.page.id }}"  {% if this.page.id == 'agenda' %}id="page-agenda"{% endif %}>
-
-    <!-- Content -->
-    <section id="layout-content">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-ml-2 left-col">
-            <div class="centered-background pl-2">
-              {% partial "menu" %}
-            </div>
-          </div>
-          <div class="col-auto pl-0">
-            <div class="logo-block page-header centered-background"></div>
-            {% page %}
-          </div>
-        </div>
-      </div>
-    </section>
-        
-    <!-- Scripts -->
-    {% partial "scripts" %}
-  </body>
+  {% partial "std-page-intro" %}
+    {% page %}</div>
+  {% partial "std-page-closer" %}
 </html>

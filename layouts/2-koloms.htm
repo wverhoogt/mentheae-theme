@@ -1,0 +1,23 @@
+[staticPage]
+useContent = 1
+default = 0
+==
+<!DOCTYPE html>
+<html>
+  {% partial "std-page-intro" %}
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          {% page %}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          {richeditor name="linkerkolom" tab="Linkerkolom" label="Linkerkolom"}Linkerkolom{/richeditor}
+        </div>
+        <div class="col-md-6">
+          {richeditor name="rechterkolom" tab="Rechterkolom" label="Rechterkolom"}Rechterkolom{/richeditor}
+      </div>
+    </div>
+  {% partial "std-page-closer" %}
+</html>
