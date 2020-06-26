@@ -25,7 +25,7 @@ function onGetBookDialog()
 function onBook()
 {
   $this->BookDialog->onBook();
-  $this->Calendar->calcDates(new Carbon(Input::get('startDate')));
+  $this->Calendar->setCalcDates(new Carbon(Input::get('startDate')));
 }
 ?>
 ==
