@@ -104,40 +104,6 @@ tr.days > td > ul.eventlist > li > a {
   white-space: normal;
   font-size: 0.8em;
 }
-.day-viewq {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  div {
-    table {
-      td, th {
-        border: 1px solid grey;
-        padding: 1em;
-        text-align: end;
-
-        &.outside-interval {
-          background-color: lightblue;
-        }
-        &.today {
-          background-color: greenyellow;
-        }
-        &.occupied {
-          background-color: lightpink;
-        }
-        &.reserved {
-          background-color: #ff3131;
-        }
-        &.requested {
-          background-color: #a9ff98;
-        }
-        &.reservation {
-          background-color: #fadc61;
-        }
-      }
-    }
-  }
-}
 
 .home {
   &-left {
