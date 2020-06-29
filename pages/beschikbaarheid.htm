@@ -5,9 +5,6 @@ is_hidden = 0
 
 [Calendar]
 
-[localePicker]
-forceUrl = 0
-
 [BookDialog]
 selector = "#day-view"
 partial = "Calendar::days"
@@ -30,14 +27,13 @@ function onBook()
 ?>
 ==
 <div class="container-fluid">
-  <div class-="row"><div class="col">
+  <div class="row"><div class="col">
     <h2>{{ 'mentheae-theme::lang.beschikbaarheid.h2'|_t }}</h2>
-    </div></div><div class="row"><div class="col">
-      {% component 'localePicker' %}
-    </div></div><div class="row"><div id="calendar-div" class="col">
-      {% component 'Calendar' %}
-    </div></div><div class="row"><div class="col">
-      {% component 'BookDialog' %}
-      <div id="startDay"></div>
-    </div></div>
+  </div></div>
+  <div class="row"><div id="calendar-div" class="col">
+    {% component 'Calendar' %}
+  </div></div><div class="row"><div class="col mt-3">
+    {% component 'BookDialog' %}
+    <div id="startDay"></div>
+  </div></div>
 </div>

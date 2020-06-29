@@ -11,5 +11,15 @@
           </div>
         </div>
         <div class="flex-fill pl-0">
-          <div class="logo-block page-header centered-background"></div>
+          <div class="logo-block page-header centered-background">
+            {{ form_open() }}
+              {% set flags={ "nl": "🇳🇱", "en": "🇬🇧" } %}
+              <select class="locale emoji" name="locale" data-request="onSwitchLocale" class="form-control">
+                {% for code, name in locales %}
+                  {% set fl = flags[code] %}
+                  <option value="{{ code }}" {{ code == activeLocale ? 'selected' }}>{{ fl }}{{ code }}</option>
+                {% endfor %}
+              </select>
+            {{ form_close() }}
+          </div>
           <div class="ml-2 mt-2">
