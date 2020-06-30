@@ -1,71 +1,59 @@
 items:
     -
-        title: Welkom
+        title: 'mentheae-theme::lang.hoofdmenu.welkom'
         nesting: '0'
         type: static-page
-        url: ''
         code: ''
         reference: welkom
-        cmsPage: ''
         replace: '0'
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
     -
-        title: Kalender
-        nesting: ''
+        title: 'mentheae-theme::lang.hoofdmenu.kalender'
         type: cms-page
-        url: ''
         code: ''
         reference: beschikbaarheid
-        cmsPage: ''
-        replace: ''
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
     -
-        title: 'Over ons'
+        title: 'mentheae-theme::lang.hoofdmenu.over_ons'
         nesting: '0'
         type: static-page
-        url: ''
         code: ''
         reference: over-ons
-        cmsPage: ''
         replace: '0'
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
     -
-        title: Gastenboek
+        title: 'mentheae-theme::lang.hoofdmenu.gastenboek'
         nesting: '0'
         type: static-page
-        url: ''
         code: ''
         reference: gastenboek
-        cmsPage: ''
         replace: '0'
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
     -
-        title: 'Haarlem e.o.'
+        title: 'mentheae-theme::lang.hoofdmenu.haarlem_e_o'
         nesting: '0'
         type: static-page
-        url: ''
         code: ''
         reference: haarlem-eo
-        cmsPage: ''
         replace: '0'
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
     -
-        title: Contact
+        title: 'mentheae-theme::lang.hoofdmenu.contact'
         nesting: '0'
         type: static-page
         code: ''

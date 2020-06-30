@@ -11,7 +11,7 @@ code = "hoofdmenu"
   </button>
   <div class="collapse navbar-collapse" id="hoofdmenu">
     <ul class="navbar-nav flex-column">
-      {% partial staticMenu ~ "::items" items=staticMenu.menuItems %}
+      {% partial "menu-items" items=staticMenu.menuItems %}
     </ul>
   </div>
 </nav>
