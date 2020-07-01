@@ -5,6 +5,13 @@ default = 0
 [localePicker]
 forceUrl = 0
 ==
+<?php
+function onInit()
+{
+  Lang::addNamespace('mentheae-theme', $this->theme->getPath() . '/lang');
+}
+?>
+==
 <!DOCTYPE html>
 <html>
   {% partial "std-page-intro" %}
