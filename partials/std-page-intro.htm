@@ -4,7 +4,7 @@
   <body class="{{ this.page.id }}"  {% if this.page.id == 'agenda' %}id="page-agenda"{% endif %}>
     <!-- Content -->
     <section id="layout-content">
-      <div class="d-flex flex-row justify-content-end">
+      <div class="d-flex flex-row">
         <div class="left-col">
           <div class="centered-background">
             {% partial "menu" %}
@@ -22,4 +22,4 @@
               </select>
             {{ form_close() }}
           </div>
-          <div class="ml-2 mt-2">
+          <div>
