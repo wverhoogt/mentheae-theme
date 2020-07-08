@@ -1,0 +1,28 @@
+[staticPage]
+useContent = 1
+default = 0
+
+[localePicker]
+forceUrl = 0
+==
+<?php
+function onInit()
+{
+  Lang::addNamespace('mentheae-theme', $this->theme->getPath() . '/lang');
+}
+?>
+==
+<!DOCTYPE html>
+<html>
+  {% partial "std-page-intro" %}
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <img class="foto" src="{mediafinder name="activityimage" label="Kopafbeelding" tab="Kopafbeelding" mode="image" imageWidth="200" imageHeight="200"{/mediafinder}">
+      </div>
+    </div>
+    <div class="row">
+      {% page %}
+    </div>
+  {% partial "std-page-closer" %}
+</html>

@@ -12,9 +12,13 @@ items:
             isExternal: '0'
     -
         title: 'mentheae-theme::lang.hoofdmenu.kalender'
+        nesting: ''
         type: cms-page
+        url: ''
         code: ''
         reference: beschikbaarheid
+        cmsPage: ''
+        replace: ''
         viewBag:
             isHidden: '0'
             cssClass: ''
@@ -23,8 +27,10 @@ items:
         title: 'mentheae-theme::lang.hoofdmenu.over_ons'
         nesting: '0'
         type: static-page
+        url: ''
         code: ''
         reference: over-ons
+        cmsPage: ''
         replace: '0'
         viewBag:
             isHidden: '0'
@@ -34,8 +40,10 @@ items:
         title: 'mentheae-theme::lang.hoofdmenu.gastenboek'
         nesting: '0'
         type: static-page
+        url: ''
         code: ''
         reference: gastenboek
+        cmsPage: ''
         replace: '0'
         viewBag:
             isHidden: '0'
@@ -45,8 +53,10 @@ items:
         title: 'mentheae-theme::lang.hoofdmenu.haarlem_e_o'
         nesting: '0'
         type: static-page
+        url: ''
         code: ''
         reference: haarlem-eo
+        cmsPage: ''
         replace: '0'
         viewBag:
             isHidden: '0'
@@ -56,8 +66,10 @@ items:
         title: 'mentheae-theme::lang.hoofdmenu.contact'
         nesting: '0'
         type: static-page
+        url: ''
         code: ''
         reference: contact
+        cmsPage: ''
         replace: '0'
         viewBag:
             isHidden: '0'
